@@ -64,6 +64,10 @@ public class Login extends HttpServlet {
                                        session.setAttribute("category", category);
                                        response.sendRedirect("building.jsp");
                                        break;
+                        default:request.setAttribute("temp", category);
+                                request.setAttribute("cat", cat);
+                                RequestDispatcher dispatcher = request.getRequestDispatcher("/login.jsp");
+                                dispatcher.forward( request, response );    
                     }
                 }
                 else

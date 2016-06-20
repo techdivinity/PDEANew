@@ -21,13 +21,6 @@
 window.onload = function () {
 document.getElementById("js").style.display='none';
 };
-
-function clearText(field)
-{
-    if (field.defaultValue == field.value) field.value = '';
-    else if (field.value == '') field.value = field.defaultValue;
-
-}
 </script>
 
 
@@ -106,7 +99,7 @@ function clearText(field)
         </c:choose>
 
         </br></br>  
-         <center>     
+    <center>    
                 
 <!--                        <div style="border: 1px solid #AAA;width: 740px;background: #ccffcc;border-radius: 15px;margin-bottom: 1px;height: 25px;line-height: 25px; font-size: 15px; color: #505050;font-family: serif">
                             <b><font color="brown">PDEA LOGIN</font></b>

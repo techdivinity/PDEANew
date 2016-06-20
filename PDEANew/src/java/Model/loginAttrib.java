@@ -32,10 +32,11 @@ public class loginAttrib
     
     public static String getCategory(String un,String pass) throws NamingException, SQLException
     {
-        Connection con=getConnect();
+        Connection con=null;
         String category=null;
         try
         {
+            con=getConnect();
             String tempPass=null;
             String tempCat=null;
             String sql1 = "select password, category from loginadmin where userName='"+un+"'";
@@ -51,14 +52,15 @@ public class loginAttrib
             {
                 category=tempCat;
             }
-            
+            con.close();
+            return category;
         }
         catch (Exception e)
         {
-            category=null;
+            return String.valueOf(e);
         }
-        finally{con.close();}
-        return category;
+        finally{}
+        
     }
     
     public static String getVID(String un) throws NamingException, SQLException
