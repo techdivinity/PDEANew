@@ -1,0 +1,66 @@
+
+    input[type=number]{
+    width: 100px;
+    font-size: 11px;
+    }
+    .smallInput input[type="number"]
+    {
+     width: 50px;   
+     font-size: 11px;
+    }
+    .smallInput2 input[type="number"]
+    {
+     width: 60px;   
+     font-size: 11px;
+    }
+    
+    .smallInput3 input[type="number"]
+    {
+     width: 70px;   
+     font-size: 11px;
+    }
+    
+    .smallInput4{
+        /*//white-space: nowrap; overflow: hidden; text-overflow:ellipsis;*/
+    }
+    .smallInput4 input[type="number"]
+    {
+     width: 70px;   
+     font-size: 11px;
+    }
+    .div2 
+    {
+        width: 900px;
+        font-size: 13px;
+        font-weight: bolder;
+        color: blue;
+        text-align: right;
+        /*//background-color: #ffa600;*/
+    }
+    #tp td{
+    text-align: center;
+    
+    }
+    #tp #venderfill td{
+    text-align: center;
+    /*//padding :1px;*/
+    font-size: 11px;
+    /*//background-color: #F0EFE2;//DDDDDD;*/
+    }
+    #tp #venderfill tr:nth-child(even) {background: #DDD}
+    #tp #venderfill tr:nth-child(odd) {background: #EEE}
+    
+    #termTable td
+    {
+     padding: 5px;   
+    }
+    
+    #termTable th
+    {
+     background-color: #ffa600;   
+    }
+    
+    #termTable tr:nth-child(even) {background: #DDD}
+    #termTable tr:nth-child(odd) {background: #EEE}
+    
+    
